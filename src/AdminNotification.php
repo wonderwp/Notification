@@ -15,10 +15,10 @@ class AdminNotification
 
     /**
      * @codeCoverageIgnore
-     * @param string $type
-     * @param string $message
+     * @param string (optional) $type
+     * @param string (optional) $message
      */
-    public function __construct($type, $message)
+    public function __construct($type = '', $message= '')
     {
         $this->type    = $type;
         $this->message = $message;
